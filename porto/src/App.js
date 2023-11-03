@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import Hero from './Hero';
+import Footer from './Footer';
+import {Helmet} from "react-helmet";
+import Projects from './Projects';
 
-function App() {
+const App = () => {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Matthew Avrillio | Portfolio</title>
+          <meta name="description" content="Matthew Avrillio's portfolio, resume, and list of projects" />
+          <link rel="stylesheet" href="https://rsms.me/inter/inter.css"></link>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,1,0" />
+      </Helmet>
+      <Header />
+      <Hero />
+      <div className='flex justify-center '>
+        <hr className='border-solid border-slate-800 border-1 w-[80%]'></hr>
+      </div>
+      <Projects />
+      <Footer />
     </div>
+    
   );
-}
+};
 
 export default App;

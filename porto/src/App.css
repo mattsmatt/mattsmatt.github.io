@@ -1,3 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  html{
+    @apply p-0 m-0 scroll-smooth bg-gray-100;
+    box-sizing: border-box;
+  }
+
+   :root{
+    width: 100%;
+    --color-navbar: #222222;
+   }
+
+   .contact-item{
+    @apply flex justify-between items-center w-[20%] h-10 text-slate-100;
+   }
+
+   .contact-item, .navbar-item{
+    position: relative;
+   }
+
+   .contact-item img, .contact-item svg{
+    @apply h-10 w-1/4 fill-slate-100;
+   }
+
+   .contact-item div{
+    @apply flex items-center;
+   }
+
+   .navbar-item:after, .contact-item:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    @apply bg-slate-100;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .navbar-item:hover:after, .contact-item:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .button-item:hover{
+    @apply bg-blue-700 text-slate-100 transition ease-in-out duration-300 
+  }
+}
+
 .App {
   text-align: center;
 }
