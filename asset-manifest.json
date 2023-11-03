@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a8dc1d71.css",
+    "main.js": "/static/js/main.181b31fd.js",
+    "static/media/project-5.png": "/static/media/project-5.62559cabc220fd740509.png",
+    "static/media/pasfoto.jpg": "/static/media/pasfoto.897c7306d88455e68eba.jpg",
+    "static/media/project-4.png": "/static/media/project-4.d36cbff8501205932e5e.png",
+    "static/media/project-6.png": "/static/media/project-6.aafc8119fdeb4663f1f7.png",
+    "static/media/project-1.png": "/static/media/project-1.5db698b3596e9ee02fd5.png",
+    "static/media/project-2.png": "/static/media/project-2.5fc4d8944f9144c6907f.png",
+    "static/media/MATTHEW AVRILLIO - Design CV.pdf": "/static/media/MATTHEW AVRILLIO - Design CV.2f69fc226e793749c63c.pdf",
+    "static/media/Matthew Avrillio - ATS CV.pdf": "/static/media/Matthew Avrillio - ATS CV.aa9039cd72b33ca06f85.pdf",
+    "static/media/project-3.png": "/static/media/project-3.4d9c8ad05f69807ba3dd.png",
+    "index.html": "/index.html",
+    "main.a8dc1d71.css.map": "/static/css/main.a8dc1d71.css.map",
+    "main.181b31fd.js.map": "/static/js/main.181b31fd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8dc1d71.css",
+    "static/js/main.181b31fd.js"
+  ]
+}
