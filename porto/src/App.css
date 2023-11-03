@@ -50,6 +50,10 @@
   .button-item:hover{
     @apply bg-blue-700 text-slate-100 transition ease-in-out duration-300 
   }
+
+  .card:hover{
+    @apply shadow-2xl transition ease-in-out duration-300 
+  }
 }
 
 .App {
