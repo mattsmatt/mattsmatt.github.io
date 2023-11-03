@@ -44,7 +44,7 @@ function Card(){
         projects.map((project) => 
         (<a href={project.link} className='w-[45%] my-5 shadow-inner rounded-2xl px-2 py-5 card'>
             <div>
-        <img className='h-[20rem] w-full object-contain' src={require('./assets/' + project.image + '.png')} alt="Project Image" />
+        <img className='h-[20rem] w-full object-contain' src={require('./assets/' + project.image + '.png')} alt={project.title} />
         <div className='text-[1.5rem] font-semibold my-2'>{project.title}</div>
         <div className='px-2 text-[0.9rem] font-light text-justify'>{project.desc}</div>
     </div>
