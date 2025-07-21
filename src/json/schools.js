@@ -21,6 +21,6 @@ export const schools = [
         name: "Publication",
       },
     ],
-    image: "binus-university.png",
+    image: "binus-university.webp",
   },
 ];

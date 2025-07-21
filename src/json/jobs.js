@@ -14,6 +14,6 @@ export const jobs = [
     importantLinks: [
       { link: "https://evotech.co.id/", name: "Company Website" },
     ],
-    image: "evotech.png",
+    image: "evotech.webp",
   },
 ];

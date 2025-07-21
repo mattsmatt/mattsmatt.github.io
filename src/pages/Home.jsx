@@ -5,7 +5,7 @@ import { jobs } from "../json/jobs.js";
 import { schools } from "../json/schools.js";
 import JobItem from "../components/JobItem.jsx";
 import SchoolItem from "../components/SchoolItem.jsx";
-import portrait from "../assets/portrait/photo.jpg";
+import portrait from "../assets/portrait/photo.webp";
 import resume from "../assets/resume/matthew-avrillio-cv.pdf";
 
 function Home() {
@@ -17,14 +17,39 @@ function Home() {
     <>
       <h1>Home</h1>
       <div className="my-10 flex flex-col items-start gap-8 md:flex-row-reverse md:items-center  md:justify-between">
-        <img src={portrait} alt="Photo" className="rounded-lg" width="175" />
+        <img
+          src={portrait}
+          alt="Photo"
+          className="rounded-lg"
+          width="175"
+          loading="lazy"
+        />
         <div className="flex flex-col gap-8">
           <div className="title text-balance text-4xl sm:text-5xl font-medium">
             Hi, I'm Matthew 👋
           </div>
-          <div className="text-balance text-xl font-normal">
-            <div>Software Engineer</div>
-            <div>Based in Jakarta, Indonesia</div>
+          <div className="text-balance text-xl flex gap-6 items-center">
+            <div>
+              <svg
+                width="50px"
+                height="50px"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                color="#f0f0f0"
+              >
+                <path
+                  d="M8 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7H16M8 7V3.6C8 3.26863 8.26863 3 8.6 3H15.4C15.7314 3 16 3.26863 16 3.6V7M8 7H16"
+                  stroke="#f0f0f0"
+                  stroke-width="1.5"
+                ></path>
+              </svg>
+            </div>
+            <div>
+              <div className="text-2xl font-semibold">Software Engineer</div>
+              <div className="text-medium">Based in Jakarta, Indonesia</div>
+            </div>
           </div>
           <div className="flex gap-4 items-center">
             <a
@@ -87,6 +112,7 @@ function Home() {
               href="https://www.linkedin.com/in/matthew-avrillio/"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:opacity-50"
             >
               <svg
                 width="30px"
@@ -132,6 +158,7 @@ function Home() {
               href="https://github.com/mattsmatt"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:opacity-50"
             >
               <svg
                 width="30px"
@@ -170,6 +197,7 @@ function Home() {
               href="mailto:mattavrillio@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:opacity-50"
             >
               <svg
                 width="30px"

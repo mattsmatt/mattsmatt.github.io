@@ -8,13 +8,40 @@ function Navbar() {
       <nav className="flex items-center justify-between">
         <ul className="flex gap-4 sm:gap-8">
           <li>
-            <NavLink to="/">home</NavLink>
+            <NavLink
+              to="/"
+              style={({ isActive }) => ({
+                color: isActive ? "#006fee" : "rgba(255, 255, 255, 0.87)",
+                fontWeight: isActive ? "700" : "",
+              })}
+              className="hover:opacity-50"
+            >
+              home
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/projects">projects</NavLink>
+            <NavLink
+              to="/projects"
+              style={({ isActive }) => ({
+                color: isActive ? "#006fee" : "rgba(255, 255, 255, 0.87)",
+                fontWeight: isActive ? "700" : "",
+              })}
+              className="hover:opacity-50"
+            >
+              projects
+            </NavLink>
           </li>
           <li>
-            <NavLink to="/about">about</NavLink>
+            <NavLink
+              to="/about"
+              style={({ isActive }) => ({
+                color: isActive ? "#006fee" : "rgba(255, 255, 255, 0.87)",
+                fontWeight: isActive ? "700" : "",
+              })}
+              className="hover:opacity-50"
+            >
+              about
+            </NavLink>
           </li>
         </ul>
       </nav>

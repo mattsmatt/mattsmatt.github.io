@@ -12,7 +12,7 @@ export const projects = [
       "It contains numerous game mechanics, including but not limited to turned-based RPG alongside puzzle minigames",
       "The related thesis showcased that after playing the game, users showed an improvement both for AI awareness and acceptance by 4.37% and 4.84% respectively",
     ],
-    image: "masa-yang-akan-datang.png",
+    image: "masa-yang-akan-datang.webp",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ export const projects = [
       "According to the findings, the YOLOv7 system exhibited higher average precision, achieving 61.3%, 78.6%, and 62.1% for each test, and boasted a faster average inference time of 90.67 seconds, meeting the requirements of an intelligent transportation system",
       "The system was built in a group of three for my Research Methodology in Computer Science paper, which was eventually published in November 2024 as a part of Procedia Computer Science Volume 245",
     ],
-    image: "traffic-estimator-system.png",
+    image: "traffic-estimator-system.webp",
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ export const projects = [
       "A K-Pop album store website where guests can view albums, registered users / customers can order albums, and administrators can manage the catalog",
       "The project was built in a group of four using ASP .NET, Microsoft SQL, alongside C# as well as Domain Driven Design (DDD) for the software design approach",
     ],
-    image: "kpopztation.png",
+    image: "kpopztation.webp",
   },
   {
     id: 4,
@@ -53,7 +53,7 @@ export const projects = [
       "On the other hand, administrators can manage the listed restaurants, promos, and other data",
       "The web application was built in a team of 4 for my Software Engineering course's final project usign ASP .NET for front-end development, C# for backend, and Microsoft SQL as the database",
     ],
-    image: "govege.png",
+    image: "govege.webp",
   },
   {
     id: 5,
@@ -68,7 +68,7 @@ export const projects = [
       "Customers can book PCs, operators can process those orders, computer technicians can process broken computer cases, while administrators can manage technician job, PC, and report data",
       "The application was built with Java and MySQL for database purposes, alongside JavaFX for the front-end",
     ],
-    image: "internet-clafes.png",
+    image: "internet-clafes.webp",
   },
   {
     id: 6,
@@ -82,6 +82,6 @@ export const projects = [
       "The project was aimed to provide a front-end interface for a guitar shop's website",
       "It was built with HTML5, CSS, and JavaScript on the programming side, alongside Figma for UI/UX design purposes",
     ],
-    image: "tanaka-guitar.png",
+    image: "tanaka-guitar.webp",
   },
 ];

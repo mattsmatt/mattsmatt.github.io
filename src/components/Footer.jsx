@@ -15,6 +15,7 @@ function Footer() {
               href="https://www.linkedin.com/in/matthew-avrillio/"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:opacity-50"
             >
               <svg
                 width="45px"
@@ -60,6 +61,7 @@ function Footer() {
               href="https://github.com/mattsmatt"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:opacity-50"
             >
               <svg
                 width="45px"
@@ -98,6 +100,7 @@ function Footer() {
               href="mailto:mattavrillio@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:opacity-50"
             >
               <svg
                 width="45px"
