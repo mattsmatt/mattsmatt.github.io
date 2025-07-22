@@ -15,8 +15,20 @@ function Home() {
 
   return (
     <>
-      <h1>Home</h1>
-      <div className="my-10 flex flex-col items-start gap-8 md:flex-row-reverse md:items-center  md:justify-between">
+      <h1
+        className="font-avantgarde-demi"
+        data-aos="fade-right"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="1000"
+      >
+        Home
+      </h1>
+      <div
+        className="my-16 flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between"
+        data-aos="fade-right"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="1250"
+      >
         <img
           src={portrait}
           alt="Photo"
@@ -47,8 +59,12 @@ function Home() {
               </svg>
             </div>
             <div>
-              <div className="text-2xl font-semibold">Software Engineer</div>
-              <div className="text-medium">Based in Jakarta, Indonesia</div>
+              <div className="text-2xl font-semibold opacity-90">
+                Software Engineer
+              </div>
+              <div className="text-medium opacity-80">
+                Based in Jakarta, Indonesia
+              </div>
             </div>
           </div>
           <div className="flex gap-4 items-center">
@@ -112,7 +128,7 @@ function Home() {
               href="https://www.linkedin.com/in/matthew-avrillio/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-50"
+              className="hover:opacity-50 transition delay-50 duration-200 ease-in-out"
             >
               <svg
                 width="30px"
@@ -158,7 +174,7 @@ function Home() {
               href="https://github.com/mattsmatt"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-50"
+              className="hover:opacity-50 transition delay-50 duration-200 ease-in-out"
             >
               <svg
                 width="30px"
@@ -197,7 +213,7 @@ function Home() {
               href="mailto:mattavrillio@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:opacity-50"
+              className="hover:opacity-50 transition delay-50 duration-200 ease-in-out"
             >
               <svg
                 width="30px"
@@ -225,11 +241,16 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="flex w-full flex-col py-6">
+      <div
+        className="flex w-full flex-col"
+        data-aos="fade-right"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="1500"
+      >
         <Tabs fullWidth aria-label="Options" size="md" variant="bordered">
           <Tab key="work" title="Work">
             {jobs.map((job) => (
-              <Card>
+              <Card className="bg-transparent text-inherit border-medium border-default-200">
                 <CardBody>
                   <JobItem job={job} />
                 </CardBody>
@@ -238,7 +259,7 @@ function Home() {
           </Tab>
           <Tab key="education" title="Education">
             {schools.map((school) => (
-              <Card>
+              <Card className="bg-transparent text-inherit border-medium border-default-200">
                 <CardBody>
                   <SchoolItem school={school} />
                 </CardBody>

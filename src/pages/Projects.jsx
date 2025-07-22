@@ -11,8 +11,15 @@ function Projects() {
 
   return (
     <>
-      <h1>Projects</h1>
-      <div className="pt-8">
+      <h1
+        className="font-avantgarde-demi"
+        data-aos="fade-right"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="1000"
+      >
+        Projects
+      </h1>
+      <div>
         {projects.map((project) => (
           <ProjectItem project={project} />
         ))}

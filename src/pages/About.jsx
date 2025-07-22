@@ -9,10 +9,24 @@ function About() {
 
   return (
     <>
-      <h1>About</h1>
-      <div className="my-10 flex flex-col gap-12 mb-0">
-        <div>
-          <div className="text-3xl pb-4">Hello, I'm Matthew 👋</div>
+      <h1
+        className="font-avantgarde-demi"
+        data-aos="fade-right"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="1000"
+      >
+        About
+      </h1>
+      <div
+        className="flex flex-col"
+        data-aos="fade-right"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="1250"
+      >
+        <div className="my-16">
+          <div className="text-3xl pb-2 font-avantgarde-demi">
+            Hello, I'm Matthew 👋
+          </div>
           <Divider className="my-4 bg-gray-300" />
           <div className="pt-4">
             I am a Computer Science graduate, specializing in software
@@ -22,8 +36,12 @@ function About() {
             just another opportunity.
           </div>
         </div>
-        <div>
-          <div className="text-3xl pb-2">Skills</div>
+        <div
+          data-aos="fade-right"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="1500"
+        >
+          <div className="text-3xl pb-2 font-avantgarde-demi">Skills</div>
           <Divider className="my-4 bg-gray-300" />
           <div className="text-xl">
             <div className="py-4 ">

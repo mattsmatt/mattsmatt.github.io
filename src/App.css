@@ -3,14 +3,38 @@
 /* Note: You may need to change the path to fit your project structure */
 @source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
 
+@font-face {
+  font-family: "Avant Garde Book BT";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avant Garde Book BT"),
+    url("./fonts/AVGARDN_2.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Avant Garde Demi BT";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avant Garde Demi BT"),
+    url("./fonts/AVGARDD_2.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Avant Garde Demi Oblique BT";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Avant Garde Demi Oblique BT"),
+    url("./fonts/AVGARDDO_2.woff") format("woff");
+}
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Inter", system-ui, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: hsl(224, 71.4%, 4.1%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,6 +52,18 @@ h2 {
   font-size: 1.6em;
   line-height: 1.1;
   font-weight: 500;
+}
+
+.font-avantgarde-book {
+  font-family: "Avant Garde Book BT", sans-serif;
+}
+
+.font-avantgarde-demi {
+  font-family: "Avant Garde Demi BT", sans-serif;
+}
+
+.font-avantgarde-demi-oblique {
+  font-family: "Avant Garde Demi Oblique BT", sans-serif;
 }
 
 /* #root {

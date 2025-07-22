@@ -6,7 +6,10 @@ function ProjectItem({ project }) {
   return (
     <>
       <div
-        className={`flex flex-col items-start justify-center lg:gap-5 gap-3 py-8`}
+        className="flex flex-col items-start justify-center lg:gap-5 gap-3 mt-16"
+        data-aos="fade-right"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="1250"
       >
         <div>
           <img
@@ -17,13 +20,16 @@ function ProjectItem({ project }) {
         </div>
         <div>
           <div>
-            <h2>{project.name}</h2>
+            <h2 className="font-avantgarde-demi">{project.name}</h2>
           </div>
           <div>
             <ul className="flex gap-2 my-2">
               {project.tools.map((tool) => (
                 <li>
-                  <Chip variant="faded" className="bg-[#242424] text-[#f0f0f0]">
+                  <Chip
+                    variant="faded"
+                    className="bg-[#242424] text-[#f0f0f0] opacity-75"
+                  >
                     {tool}
                   </Chip>
                 </li>

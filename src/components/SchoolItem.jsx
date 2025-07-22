@@ -6,19 +6,21 @@ function SchoolItem({ school }) {
   const options = { month: "short", year: "numeric" };
   return (
     <>
-      <div className={`flex items-start justify-between py-8 px-4`}>
-        <div className="w-[10%]">
+      <div
+        className={`flex flex-col gap-5 md:items-start w-full md:justify-between py-8 px-4 md:flex-row`}
+      >
+        <div className="w-1/2 m-auto md:w-[10%] md:m-0">
           <img
             src={getImageUrl(school.image, "school")}
             alt=""
             className="w-full"
           />
         </div>
-        <div className="w-[85%]">
+        <div className="w-full md:w-[85%]">
           <div>
             <h2>{school.schoolName}</h2>
           </div>
-          <div>
+          <div className="opacity-75">
             <div>{school.degree + " degree, " + school.field}</div>
           </div>
           <div>

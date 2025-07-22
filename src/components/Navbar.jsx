@@ -14,7 +14,7 @@ function Navbar() {
                 color: isActive ? "#006fee" : "rgba(255, 255, 255, 0.87)",
                 fontWeight: isActive ? "700" : "",
               })}
-              className="hover:opacity-50"
+              className="hover:opacity-50 transition delay-50 duration-200 ease-in-out"
             >
               home
             </NavLink>
@@ -26,7 +26,7 @@ function Navbar() {
                 color: isActive ? "#006fee" : "rgba(255, 255, 255, 0.87)",
                 fontWeight: isActive ? "700" : "",
               })}
-              className="hover:opacity-50"
+              className="hover:opacity-50 transition delay-50 duration-200 ease-in-out"
             >
               projects
             </NavLink>
@@ -38,7 +38,7 @@ function Navbar() {
                 color: isActive ? "#006fee" : "rgba(255, 255, 255, 0.87)",
                 fontWeight: isActive ? "700" : "",
               })}
-              className="hover:opacity-50"
+              className="hover:opacity-50 transition delay-50 duration-200 ease-in-out"
             >
               about
             </NavLink>
