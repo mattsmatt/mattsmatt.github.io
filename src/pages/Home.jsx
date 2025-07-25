@@ -1,12 +1,24 @@
 import { useEffect } from "react";
 import "../App.css";
-import { Tabs, Tab, Card, CardBody, Button } from "@heroui/react";
+import {
+  Tabs,
+  Tab,
+  Card,
+  CardBody,
+  CardFooter,
+  Chip,
+  Image,
+  Button,
+} from "@heroui/react";
 import { jobs } from "../json/jobs.js";
 import { schools } from "../json/schools.js";
+import { projects } from "../json/projects.js";
+import { getImageUrl } from "../utils/image-util.js";
 import JobItem from "../components/JobItem.jsx";
 import SchoolItem from "../components/SchoolItem.jsx";
 import portrait from "../assets/portrait/photo.webp";
 import resume from "../assets/resume/matthew-avrillio-cv.pdf";
+import { NavLink } from "react-router";
 
 function Home() {
   useEffect(() => {
@@ -242,7 +254,7 @@ function Home() {
         </div>
       </div>
       <div
-        className="flex w-full flex-col"
+        className="flex w-full flex-col mb-16"
         data-aos="fade-right"
         data-aos-easing="ease-in-out"
         data-aos-duration="1500"
@@ -267,6 +279,84 @@ function Home() {
             ))}
           </Tab>
         </Tabs>
+      </div>
+      <div className="flex w-full flex-col">
+        <div className="mb-8 flex justify-between items-center">
+          <h2
+            className="font-avantgarde-demi !text-4xl"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1500"
+          >
+            Key Projects
+          </h2>
+          <NavLink
+            to="/projects"
+            className="flex gap-1 text-large view-more text-[#f0f0f0]"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1500"
+          >
+            View More
+            <svg
+              width="30px"
+              height="30px"
+              stroke-width="1.5"
+              fill="none"
+              color="#f0f0f0"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 6L15 12L9 18"
+                stroke="#f0f0f0"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </NavLink>
+        </div>
+        <div className="gap-6 grid grid-cols-1 md:grid-cols-2">
+          {projects.slice(0, 4).map((item, index) => (
+            /* eslint-disable no-console */
+            <Card
+              key={index}
+              shadow="sm"
+              data-aos="fade-right"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="1500"
+              onPress={() => window.open(item.sourceCode, "_blank").focus()}
+              isPressable
+            >
+              <CardBody className="overflow-visible p-0">
+                <Image
+                  alt={item.title}
+                  className="w-full object-cover h-[300px]"
+                  radius="lg"
+                  shadow="sm"
+                  src={getImageUrl(item.image, "project")}
+                  width="100%"
+                />
+              </CardBody>
+              <CardFooter className="flex flex-col justify-start items-start bg-gray-600 text-gray-100">
+                <b className="font-avantgarde-demi">{item.name}</b>
+                <ul className="flex gap-2">
+                  {item.tools.map((tool) => (
+                    <li>
+                      <Chip
+                        variant="faded"
+                        className="bg-[#242424] text-gray-100"
+                      >
+                        {tool}
+                      </Chip>
+                    </li>
+                  ))}
+                </ul>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
       </div>
     </>
   );
